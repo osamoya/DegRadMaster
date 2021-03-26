@@ -19,7 +19,7 @@ public class R_QuestionScript : MonoBehaviour
     void stage1()
     {
         int tmp = Random.Range(0,3);
-        RD_.denominator = tmp;
+        RD_.denominator = QestionsSets[tmp];
         RD_.numerator=R_.CalcNumerator(tmp,1);
     }
 }
