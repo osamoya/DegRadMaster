@@ -8,7 +8,7 @@ public class RD_ManagerScript : MonoBehaviour
     public int inputNum;//入力分子
     public int denominator;//分母
     public int numerator;//分子
-    [SerializeField] int deg;//度数法
+    public int deg;//度数法
 
 
     bool checkAns()
@@ -18,7 +18,7 @@ public class RD_ManagerScript : MonoBehaviour
         return true;
     }
 
-    void setDeg()
+    public void setDeg()
     {
         deg = 180 * numerator / denominator;
     }
