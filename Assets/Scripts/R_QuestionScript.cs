@@ -18,8 +18,9 @@ public class R_QuestionScript : MonoBehaviour
     //一番最初のステージ(まずは)
     public void stage1()
     {
-        int tmp = Random.Range(0,4);
+        int tmp = Random.Range(1,4);
         RD_.denominator = QestionsSets[tmp];
         RD_.numerator=R_.CalcNumerator(tmp,1);
+        RD_.setDeg();
     }
 }
