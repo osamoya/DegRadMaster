@@ -15,7 +15,7 @@ public class R_SetsScript : MonoBehaviour
     //分母と象限から、適切な分子を返却する。
     //ただし、第1象限とは0<=θ<=90とする
     //                    分母　　象限
-    int CalcNumerator(int den,int Quadrant)
+    public int CalcNumerator(int den,int Quadrant)
     {
         if (Quadrant < 1 || Quadrant > 4) { Debug.Log("象限の設定ミス"); return -1; }
         
