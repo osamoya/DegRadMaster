@@ -14,11 +14,11 @@ public class R_QuestionScript : MonoBehaviour
     int[] QestionsSets;
 
     void refleshSet() { QestionsSets = null; }
-    void setQ1() { QestionsSets = R_.first; }
+    public void setQ1() { QestionsSets = R_.first; }
     //一番最初のステージ(まずは)
-    void stage1()
+    public void stage1()
     {
-        int tmp = Random.Range(0,3);
+        int tmp = Random.Range(0,4);
         RD_.denominator = QestionsSets[tmp];
         RD_.numerator=R_.CalcNumerator(tmp,1);
     }
