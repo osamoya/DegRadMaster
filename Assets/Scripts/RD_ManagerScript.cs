@@ -6,8 +6,8 @@ public class RD_ManagerScript : MonoBehaviour
 {
     [SerializeField] int inputDen;//入力分母
     [SerializeField] int inputNum;//入力分子
-    [SerializeField] int denominator;//分母
-    [SerializeField] int numerator;//分子
+    public  int denominator;//分母
+    public int numerator;//分子
     [SerializeField] int deg;//度数法
 
 
