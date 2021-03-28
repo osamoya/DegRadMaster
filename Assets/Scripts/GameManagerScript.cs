@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//デスクトップから、更新できるかのテスト
+
 public class GameManagerScript : MonoBehaviour
 {
     public RD_ManagerScript RD_;
