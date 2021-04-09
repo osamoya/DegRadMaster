@@ -10,10 +10,11 @@ public class GameManagerScript : MonoBehaviour
     public RD_ManagerScript RD_;
     public R_QuestionScript R_Q_;
     public Text Source;
+    private int Qnumber;
     // Start is called before the first frame update
     void Start()
     {
-        
+        retry();
     }
 
     // Update is called once per frame
@@ -28,5 +29,6 @@ public class GameManagerScript : MonoBehaviour
         R_Q_.stage1();
         Debug.Log("分母："+RD_.denominator+"に設定");
         Source.text = "" + RD_.deg;
+        Qnumber = 0;
     }
 }
