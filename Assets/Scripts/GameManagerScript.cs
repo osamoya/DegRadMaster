@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
 {
+    [SerializeField] int MaxQuestion = 5;
     public RD_ManagerScript RD_;
     public R_QuestionScript R_Q_;
     public Text Source;
@@ -23,6 +24,10 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         ElapsedTime+=Time.deltaTime;
+        if (Qnumber == MaxQuestion)
+        {
+            
+        }
     }
 
     public void retry()
@@ -38,6 +43,7 @@ public class GameManagerScript : MonoBehaviour
     public void onClickChoice()
     {
         Qnumber++;
+        Debug.Log("回答。今" + Qnumber + "問目");
 
     }
 }
