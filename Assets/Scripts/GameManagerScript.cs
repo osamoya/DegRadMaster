@@ -17,6 +17,8 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Qnumber = 0;
+        ElapsedTime = 0;
         retry();
     }
 
@@ -36,8 +38,7 @@ public class GameManagerScript : MonoBehaviour
         R_Q_.stage1();
         Debug.Log("分母："+RD_.denominator+"に設定");
         Source.text = "" + RD_.deg;
-        Qnumber = 0;
-        ElapsedTime = 0;
+        
     }
     
     public void onClickChoice()
