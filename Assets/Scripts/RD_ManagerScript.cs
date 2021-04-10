@@ -10,7 +10,7 @@ public class RD_ManagerScript : MonoBehaviour
     public int numerator;//分子
     public int deg;//度数法
 
-    GameManagerScript gameManagerScript_;
+    public GameManagerScript gameManagerScript_;
 
     bool checkAns()
     {
