@@ -477,6 +477,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 610774532}
+        m_MethodName: onClickChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &63983722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,6 +1038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58653f85d24356441a9ce24cad1b6717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxQuestion: 5
   RD_: {fileID: 610774531}
   R_Q_: {fileID: 610774530}
   Source: {fileID: 587305443}
@@ -1412,6 +1424,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 610774532}
+        m_MethodName: onClickChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1022425582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,6 +1583,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 610774531}
         m_MethodName: OnClickChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 610774532}
+        m_MethodName: onClickChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
