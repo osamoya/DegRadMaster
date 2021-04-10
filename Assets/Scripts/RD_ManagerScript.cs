@@ -34,6 +34,7 @@ public class RD_ManagerScript : MonoBehaviour
     public void OnClickChoice()
     {
         Debug.Log("結果："+checkAns());
+        if (checkAns()) gameManagerScript_.addScore();
         gameManagerScript_.retry();
     }
 }
