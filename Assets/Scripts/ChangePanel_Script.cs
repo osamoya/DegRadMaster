@@ -27,6 +27,6 @@ public class ChangePanel_Script : MonoBehaviour
 
     private  void movePanel(GameObject panel,int x)
     {
-        panel.gameObject.transform.position=new Vector3(x,0,0);
+        panel.gameObject.transform.localPosition=new Vector3(x,0,0);
     }
 }

@@ -11,10 +11,11 @@ public class GameManagerScript : MonoBehaviour
     public RD_ManagerScript RD_;
     public R_QuestionScript R_Q_;
     public ChangePanel_Script ChangePanel_;
+    public ResultText_Script ResultTezt_;
     public Text Source;
-    private int Qnumber;
+    public int Qnumber { get; private set; }
+    public int CorrectNum { get; private set; }
     private float ElapsedTime;
-    private float AnsTime;
     private State state;
     enum State
     {
@@ -52,6 +53,7 @@ public class GameManagerScript : MonoBehaviour
         {
             state = State.RESULT;
             ChangePanel_.dispResultPanel();
+            ResultTezt_.changeResult((int)ElapsedTime,CorrectNum);
         }
     }
     public void resultState()
@@ -71,7 +73,12 @@ public class GameManagerScript : MonoBehaviour
     public void onClickChoice()
     {
         Qnumber++;
+        Debug.Log("今の時間："+ElapsedTime);
         Debug.Log("回答。今" + Qnumber + "問目");
 
+    }
+    public void addScore()
+    {
+        if (CorrectNum < MaxQuestion) CorrectNum++;
     }
 }

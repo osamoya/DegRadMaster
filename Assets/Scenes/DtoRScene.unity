@@ -974,6 +974,7 @@ GameObject:
   - component: {fileID: 610774530}
   - component: {fileID: 610774529}
   - component: {fileID: 610774534}
+  - component: {fileID: 610774535}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1043,6 +1044,7 @@ MonoBehaviour:
   RD_: {fileID: 610774531}
   R_Q_: {fileID: 610774530}
   ChangePanel_: {fileID: 610774534}
+  ResultTezt_: {fileID: 610774535}
   Source: {fileID: 587305443}
 --- !u!4 &610774533
 Transform:
@@ -1072,6 +1074,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainPanel: {fileID: 1228899406}
   ResultPanel: {fileID: 40096821}
+--- !u!114 &610774535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610774528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c9327fd35a8da47b01f6982cc7cd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GMS_: {fileID: 610774532}
+  time_t: {fileID: 941178822}
+  correct_t: {fileID: 24724301}
+  rank_t: {fileID: 627572429}
+  comment_t: {fileID: 1070899974}
 --- !u!1 &627572427
 GameObject:
   m_ObjectHideFlags: 0
