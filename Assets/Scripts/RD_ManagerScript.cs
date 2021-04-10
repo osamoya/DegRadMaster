@@ -10,6 +10,7 @@ public class RD_ManagerScript : MonoBehaviour
     public int numerator;//分子
     public int deg;//度数法
 
+    GameManagerScript gameManagerScript_;
 
     bool checkAns()
     {
@@ -33,5 +34,6 @@ public class RD_ManagerScript : MonoBehaviour
     public void OnClickChoice()
     {
         Debug.Log("結果："+checkAns());
+        gameManagerScript_.retry();
     }
 }
