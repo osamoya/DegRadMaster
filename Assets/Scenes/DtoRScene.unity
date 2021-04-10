@@ -1026,6 +1026,7 @@ MonoBehaviour:
   denominator: 0
   numerator: 0
   deg: 0
+  gameManagerScript_: {fileID: 610774532}
 --- !u!114 &610774532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,6 +1042,7 @@ MonoBehaviour:
   MaxQuestion: 5
   RD_: {fileID: 610774531}
   R_Q_: {fileID: 610774530}
+  ChangePanel_: {fileID: 610774534}
   Source: {fileID: 587305443}
 --- !u!4 &610774533
 Transform:
