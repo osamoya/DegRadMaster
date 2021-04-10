@@ -12,7 +12,7 @@ public class GameManagerScript : MonoBehaviour
     public R_QuestionScript R_Q_;
     public ChangePanel_Script ChangePanel_;
     public Text Source;
-    private int Qnumber;
+    public int Qnumber { get; private set; }
     private float ElapsedTime;
     private float AnsTime;
     private State state;
