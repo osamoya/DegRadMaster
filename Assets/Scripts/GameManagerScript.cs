@@ -13,6 +13,7 @@ public class GameManagerScript : MonoBehaviour
     public ChangePanel_Script ChangePanel_;
     public ResultText_Script ResultTezt_;
     public ArrowMove_Script ArrowMove_;
+    public EffectManagerScript effectManager_;
     public Text Source;
     public int Qnumber { get; private set; }
     public int CorrectNum { get; private set; }
@@ -78,7 +79,7 @@ public class GameManagerScript : MonoBehaviour
         Qnumber++;
         Debug.Log("今の時間："+ElapsedTime);
         Debug.Log("回答。今" + Qnumber + "問目");
-
+        effectManager_.onFlashPanel();
     }
     public void addScore()
     {

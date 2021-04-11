@@ -33,7 +33,7 @@ public class EffectManagerScript : MonoBehaviour
         panel_a = 0;
         Panelcolor = EffectPanel.GetComponent<Image>().color;
         
-        Debug.Log("フラッシュ！"); 
+        //Debug.Log("フラッシュ！"); 
         
     }
     private void Update()
@@ -52,7 +52,7 @@ public class EffectManagerScript : MonoBehaviour
     }
     void setPanelAlpha(int a)
     {
-        Debug.Log("アルファをセット:"+a);
+        //Debug.Log("アルファをセット:"+a);
         image.color = new Color(R, G, B, 1.0f*a/256) ;
     }
 }
