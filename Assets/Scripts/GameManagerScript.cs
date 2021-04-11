@@ -12,6 +12,7 @@ public class GameManagerScript : MonoBehaviour
     public R_QuestionScript R_Q_;
     public ChangePanel_Script ChangePanel_;
     public ResultText_Script ResultTezt_;
+    public ArrowMove_Script ArrowMove_;
     public Text Source;
     public int Qnumber { get; private set; }
     public int CorrectNum { get; private set; }
@@ -30,6 +31,7 @@ public class GameManagerScript : MonoBehaviour
         Qnumber = 0;
         ElapsedTime = 0;
         retry();
+        ArrowMove_.setArrows();
     }
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class GameManagerScript : MonoBehaviour
             state = State.RESULT;
             ChangePanel_.dispResultPanel();
             ResultTezt_.changeResult((int)ElapsedTime,CorrectNum);
+            ArrowMove_.hideArrows();
         }
     }
     public void resultState()
